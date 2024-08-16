@@ -3,10 +3,12 @@ package main
 import "fmt"
 
 func minus(a int, b int) int {
-    return a + b
+    return a - b
 }
 
 func main() {
-    result := minus(5, 3)
-    fmt.Println("The sum is:", result)
+	a := 40
+    b := 50
+    result := minus(a, b)
+	fmt.Printf("%d - %d = %d\n", a, b, result)
 }
