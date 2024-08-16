@@ -28,17 +28,10 @@ func mod(a, b int) int {
 }
 
 func main() {
+
 	a := 40
 	b := 50
-
-<<<<<<<<< Temporary merge branch 1
-	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
-}
-
-func mod(a, b int) int {
-	modResult := a % b
-	return modResult
-=========
+	
 	result := minus(a, b)
 	result_divide := Divide(a, b)
 	result_multiply := multiply(a, b)
@@ -47,5 +40,6 @@ func mod(a, b int) int {
 	fmt.Printf("%d / %d = %d\n", a, b, result_divide)
 	fmt.Printf("a * b = %v * %v = %v\n", a, b,result_multiply)
 	fmt.Printf("a + b = %v + %v = %v\n", a,b, sum(a,b))
+	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
 	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
 }
