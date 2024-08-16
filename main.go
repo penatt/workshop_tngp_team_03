@@ -18,6 +18,7 @@ func multiply(a, b int) int {
 	return a * b
 }
 
+
 func main() {
 	a := 40
 	b := 50
@@ -29,5 +30,13 @@ func main() {
 	fmt.Printf("%d - %d = %d\n", a, b, result_divide)
 	fmt.Printf("a * b = %v * %v = %v", a, b,result_multiply)
 	fmt.Println()
+	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
 }
 
+
+
+
+func mod(a, b int) int {
+	modResult := a % b
+	return modResult
+}
