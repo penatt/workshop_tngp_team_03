@@ -17,15 +17,15 @@ func Divide(a, b int) int {
 func multiply(a, b int) int {
 	return a * b
 }
+
 func sum(a int,b int)int{
-return a+b
+	return a+b
 }
 
 
 func main() {
 	a := 40
 	b := 50
-
 	result := minus(a, b)
 	result_divide := Divide(a, b)
 	result_multiply := multiply(a, b)
