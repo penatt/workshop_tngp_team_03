@@ -1,9 +1,13 @@
 package main
 
+import (
+	"fmt"
+)
+
 func multiply(a, b int) int {
 	return a * b
 }
 
 func main() {
-	multiply(1, 3)
+	fmt.Println(multiply(1, 3))
 }
