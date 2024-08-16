@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	mod(40, 50)
+	a := 40
+	b := 50
+
+	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
 }
 
 func mod(a, b int) int {
 	modResult := a % b
-	fmt.Printf("%v '%%' %v = %v\n", a, b, modResult)
 	return modResult
 }
