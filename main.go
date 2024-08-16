@@ -31,9 +31,14 @@ func main() {
 	a := 40
 	b := 50
 
+<<<<<<<<< Temporary merge branch 1
+	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
+}
 
-	
-
+func mod(a, b int) int {
+	modResult := a % b
+	return modResult
+=========
 	result := minus(a, b)
 	result_divide := Divide(a, b)
 	result_multiply := multiply(a, b)
