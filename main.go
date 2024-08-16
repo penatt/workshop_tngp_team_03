@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func minus(a int, b int) int {
@@ -27,10 +28,16 @@ func mod(a, b int) int {
 	return modResult
 }
 
+func sqrt(a float64) float64{
+	resultSqrt := math.Sqrt(a)
+	return resultSqrt
+}
+
 func main() {
 
 	a := 40
 	b := 50
+	c := 9.00
 	
 	result := minus(a, b)
 	result_divide := Divide(a, b)
@@ -41,5 +48,5 @@ func main() {
 	fmt.Printf("a * b = %v * %v = %v\n", a, b,result_multiply)
 	fmt.Printf("a + b = %v + %v = %v\n", a,b, sum(a,b))
 	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
-	fmt.Printf("%v '%%' %v = %v\n", a, b, mod(a,b))
+	fmt.Printf("Sqrt(a) = Sqrt(%v) = %v",c,sqrt(c))
 }
