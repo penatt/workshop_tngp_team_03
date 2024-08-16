@@ -7,7 +7,7 @@ func main() {
 }
 
 func mod(a, b int) int {
-	modResult := b % a
-	fmt.Printf("%v '%%' %v = %v\n", b, a, modResult)
+	modResult := a % b
+	fmt.Printf("%v '%%' %v = %v\n", a, b, modResult)
 	return modResult
 }
